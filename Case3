@@ -1,0 +1,14 @@
+import random as r
+def temp():
+  upper_lim = 50
+  lower_lim = 0  
+  temp = r.uniform(-10, 60)
+  print("...TAKING TEMPERATURE READING!...")
+  if temp < lower_lim:
+      print("...ALERT! TEMPERATURE IS LESS THAN LIMIT! IT HAS REACHED", f"{temp:.2f} °C", "...")
+  elif temp > upper_lim:
+      print("...ALERT! TEMPERATURE IS MORE THAN LIMIT! IT HAS REACHED", f"{temp:.2f} °C", "...")
+  else:
+      print("...TEMPERATURE IS IN RANGE. IT IS", f"{temp:.2f} °C", "...")
+  print("======================================")
+temp()
